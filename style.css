@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#internships">Internships</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#resume">Resume</a>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <h1>Hi, I'm <span class="name">Vyshnavi Gali</span></h1>
+                <h2>FullStack JavaDeveloper</h2>
+                <p>I create beautiful, responsive websites that help businesses grow.</p>
+                <button id="resume-btn" class="btn">View My Resume</button>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="vyshu.JPG" alt="About Image">
+                </div>
+                <div class="about-text">
+                    <h3></h3>
+                    <p>Highly motivated, ambitious, and organized individual seeking an entry-level position in the
+                        Software industry
+                        where I can utilize the extensive knowledge, utilize my skills, Possess excellent teamwork and
+                        contribute to the
+                        company’s success while developing a solid professional base. </p>
+
+                    <div class="info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Vyshnavi Gali</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>galivyshnavi9@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>From:</span>
+                            <p>kadapa,Andhrapradesh</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/galivyshnavi"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/login"><i class="fab fa-linkedin"></i></a>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="section">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="internship-container">
+                <!-- Internship Card 1 -->
+                <div class="internship-card">
+                    <div class="internship-img">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.zmRFMB3z42-o3iz8QT42gQAAAA?r=0&rs=1&pid=ImgDetMain"
+                            alt="Internship 1">
+                    </div>
+                    <div class="internship-content">
+                        <h3>FullStack JavaDeveloper</h3>
+                        <p class="company">Dhee Coding Lab</p>
+                        <p class="duration">2024-present</p>
+                        <p class="description">Currently engaged in an internship, gaining hands-on experience in full-stack development using Java technologies.
+The role has also provided practical exposure to front-end technologies like HTML5, CSS3, JavaScript for building
+responsive and interactive web applications .
+.</p>
+                        <a href="#projects" class="btn">View Project Details</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container">
+                <!-- Coffee Shop Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="coffeshop-menu.png" alt="Coffee Shop Website">
+                        <div class="overlay">
+                            <a href="coffee-shop-details.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Semma Coffee Shop</h3>
+                        <p>A responsive website for a coffee shop with menu and contact information.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://galivyshnavi.github.io/semma_coffee/" target="_blank" class="btn">Live Demo</a>
+                    </div>
+                </div>
+
+                <!-- EatFit Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="eat-fitimage.png
+                    " alt="EatFit Website">
+                        <div class="overlay">
+                            <a href="eatfit-details.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>EatFit Website</h3>
+                        <p>A health and nutrition website promoting healthy eating habits.</p>
+                        <div class="tech-used">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://galivyshnavi.github.io/eat_fit_website/" target="_blank" class="btn">Live
+                            Demo</a>
+                    </div>
+                </div>
+
+                <!-- Electronic Piano Project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP._Wk0AWzFXvbrzwEdIOwCpgHaFj?r=0&rs=1&pid=ImgDetMain"
+                            alt="Electronic Piano">
+                        <div class="overlay">
+                            <a href="electronic-piano-details.html" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Electronic Piano using 555 Timer</h3>
+                        <p>A functional electronic piano circuit built using the 555 timer IC that generates different
+                            musical tones.</p>
+                        <div class="tech-used">
+                            <span>Electronics</span>
+                            <span>555 Timer</span>
+                            <span>Circuit Design</span>
+                        </div>
+                        <a href="#" class="btn">View Demo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Java7</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SQL</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title">My Resume</h2>
+            <div class="resume-content">
+                <div class="resume-column">
+                    <h3>Education</h3>
+                    <div class="resume-item">
+                        <h4>Bachelor of Technology</h4>
+                        <h5>Rajeev gandhi memorial college of engineering and technology / 2021-2025</h5>
+                        <p>Graduated with honors and Specialized in Electronics and communication engineering</p>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Higher Secondary Education Mathematics, Physics, Chemistry(MPC)</h4>
+                        <h5>Sri Chaitanya junior college / 2019-2021</h5>
+                        <p>Specialized in Maths,Physics,Chemistry</p>
+                    </div>
+                    <div class="resume-column">
+                        <h3>Experience</h3>
+                        <div class="resume-item">
+                            <h4>FullStack JavaDeveloper Intern</h4>
+                            <h5>Dhee Coding Lab | 2024-Present</h5>
+                            <ul class="resume-description">
+                                <li>Developed responsive web applications using React.js and Java</li>
+                                <li>Collaborated with team members using Git version control</li>
+                                <li>Implemented RESTful APIs for data communication</li>
+                                <li>Participated in code reviews and debugging sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="resume-column">
+                        <h3>Projects</h3>
+                        <div class="resume-item">
+                            <h4>Semma Coffee Shop Website</h4>
+                            <ul class="resume-description">
+                                <li>Built a responsive website with HTML, CSS, and JavaScript</li>
+                                <li>Implemented interactive menu filtering system</li>
+                                <li>Optimized performance for mobile devices</li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Electronic Piano Circuit</h4>
+                            <ul class="resume-description">
+                                <li>Designed and built a functional electronic piano using 555 timer IC</li>
+                                <li>Calculated resistor values for accurate musical notes</li>
+                                <li>Troubleshooted circuit issues using multimeter measurements</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    <h3>Certifications</h3>
+                    <div class="resume-item">
+                        <h4>Full Stack Java Developer</h4>
+                        <h5>Dhee Coding Lab | 2024</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="download-resume">
+                <a href="vyshnavi.pdf" class="btn">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy;  My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

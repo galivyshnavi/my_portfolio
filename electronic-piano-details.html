@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Piano Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .circuit-diagram {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .component-list {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        
+        .component-list ul {
+            columns: 2;
+            list-style-type: none;
+        }
+        
+        @media (max-width: 768px) {
+            .component-list ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#internships">Internships</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="index.html#skills">Skills</a>
+                <a href="index.html#resume">Resume</a>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Header -->
+    <div class="project-detail-header">
+        <div class="container">
+            <h1>Electronic Piano using 555 Timer</h1>
+            <p>A functional musical instrument circuit built with basic electronic components</p>
+        </div>
+    </div>
+    <!-- In electronic-piano-details.html -->
+<h2>Project Demonstration</h2>
+<div class="video-container">
+    <iframe width="560" height="315" src="piano-demo.mp4" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+</div>
+    <!-- Project Detail Content -->
+    <div class="project-detail-content">
+        <div class="project-meta">
+            <div class="meta-item">
+                <i class="fas fa-calendar-alt"></i>
+                <p>November 2023</p>
+            </div>
+            <div class="meta-item">
+                <i class="fas fa-tags"></i>
+                <p>Electronics, 555 Timer, Analog Circuits</p>
+            </div>
+            
+        </div>
+        
+        <h2>Project Overview</h2>
+        <p>This electronic piano project uses the versatile 555 timer IC to generate different musical tones. By pressing different buttons, users can play simple melodies. The circuit demonstrates fundamental principles of analog electronics and sound generation.</p>
+        
+
+        
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+            <li>Generates 8 distinct musical notes (C to C' octave)</li>
+            <li>Built using basic electronic components</li>
+            <li>Adjustable tone duration and pitch</li>
+            <li>Works on 9V battery power</li>
+            <li>Clear sound output through speaker</li>
+            <li>Educational demonstration of astable multivibrator</li>
+        </ul>
+        
+        <h2>Circuit Design</h2>
+        <p>The circuit is based on the 555 timer IC configured in astable mode. Different resistor values are selected for each push button to produce different frequencies corresponding to musical notes.</p>
+        
+        <div class="circuit-diagram">
+            <h3>Schematic Diagram</h3>
+            <img src="https://circuits-diy.com/wp-content/uploads/2019/04/electronic-piano-circuit-1-1024x661.png" alt="Circuit Schematic" style="max-width: 600px;">
+            <p>Circuit diagram of the electronic piano</p>
+        </div>
+        
+        <div class="component-list">
+            <h3>Components Used</h3>
+            <ul>
+                <li>1 × 555 Timer IC</li>
+                <li>8 × Push buttons</li>
+                <li>8 × Resistors (values calculated for musical notes)</li>
+                <li>1 × 10μF Capacitor</li>
+                <li>1 × 0.01μF Capacitor</li>
+                <li>1 × 8Ω Speaker</li>
+                <li>1 × 9V Battery</li>
+                <li>1 × Breadboard</li>
+                <li>Jumper wires</li>
+            </ul>
+        </div>
+        
+        <h2>Technical Implementation</h2>
+        <p>The 555 timer works in astable mode where the frequency of oscillation is determined by the resistors connected to pins 6 and 7 and the capacitor connected to pin 2. Each push button connects a different resistor value, changing the output frequency to produce different musical notes.</p>
+        
+        <p>The frequency for each note is calculated using the formula:</p>
+        <p style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; font-family: monospace;">
+            f = 1.44 / ((R1 + 2×R2) × C)
+        </p>
+        
+        <div class="project-screenshot">
+            <img src="piano-image.png" alt="Circuit in Action">
+            <p>The circuit in action producing musical tones</p>
+        </div>
+        
+        <h2>Challenges & Solutions</h2>
+        <p><strong>Challenge:</strong> Getting clean, distinct tones without distortion.</p>
+        <p><strong>Solution:</strong> Careful selection of capacitor values and proper decoupling of power supply.</p>
+        
+        <p><strong>Challenge:</strong> Making the circuit compact and portable.</p>
+        <p><strong>Solution:</strong> Used a small breadboard and optimized component placement.</p>
+        
+        <h2>What I Learned</h2>
+        <ul class="feature-list">
+            <li>Practical application of 555 timer IC</li>
+            <li>Frequency calculation for musical notes</li>
+            <li>Circuit debugging techniques</li>
+            <li>Importance of proper grounding in analog circuits</li>
+            <li>Component selection for audio applications</li>
+        </ul>
+        
+        <div class="back-to-projects">
+            <a href="index.html#projects" class="btn">Back to Projects</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
